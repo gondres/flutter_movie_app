@@ -22,7 +22,8 @@ flutter.buildMode=debug
 flutter.versionName=1.0.0
 flutter.versionCode=1
 ``
-7. Open terminal, ketik "flutter upgrade"
-8. Open terminal, ketik "flutter run"
+7. buka terminal, ketik "flutter upgrade"
+8. Buka emulator android anda.
+9. Lalu, buka terminal, ketik "flutter run"
 
 Semoga membantu :D.
