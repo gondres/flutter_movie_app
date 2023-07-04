@@ -1,16 +1,28 @@
-# tmdb_movie
-
-A new Flutter project.
+A new Movie App project supported by TMDB API.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Clone Guide
+1. Buka VSCode anda
+2. Ketik CTRL + SHIFT + P
+3. lalu ketik "Git Clone" tekan Enter
+4. Kemudian copy paste url link github "https://github.com/gondres/flutter_movie_app.git" tekan Enter.
+5. Lalu buka folder clone app.
+5. Lalu ke File → Preferences → Settings
+   cari "Flutter run additional args"
+   lalu klik Add Item
+   lalu ketik --no-sound-null-safety
+   Click OK.
+6.lalu Klik kanan padA file android -> New File -> ketik" local.properties"
+Lalu isi code di bawah ini:
+``
+sdk.dir={{path android sdk}}
+flutter.sdk={{path flutter sdk}}
+flutter.buildMode=debug
+flutter.versionName=1.0.0
+flutter.versionCode=1
+``
+7. Open terminal, ketik "flutter upgrade"
+8. Open terminal, ketik "flutter run"
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Semoga membantu :D.
