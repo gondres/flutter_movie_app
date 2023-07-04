@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
 import 'package:tmdb_movie/data/service/movie_service.dart';
-import 'package:tmdb_movie/pages/home_page.dart';
 import 'package:tmdb_movie/pages/splash_screen_page.dart';
 import 'package:tmdb_movie/provider/movie_provider.dart';
 import 'package:tmdb_movie/utils/app_route.dart';
@@ -24,35 +23,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Movie App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MainPage(title: 'TMDB Movie'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  final int _counter = 0;
-
+class _MainPageState extends State<MainPage> {
   final serviceUtil = ServiceUtil();
-
-  void _incrementCounter() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const HomePage()),
-    );
-  }
 
   @override
   void initState() {
